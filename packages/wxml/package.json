@@ -1,0 +1,29 @@
+{
+  "name": "@tofrankie/eslint-plugin-wxml",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.33.0",
+  "description": "eslint plugin for wxml",
+  "author": "Frankie <1426203851@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslint-plugin-wxml",
+    "miniprogram",
+    "wxml",
+    "tofrankie"
+  ],
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown --clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "catalog:prod"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:dev",
+    "eslint-plugin-eslint-plugin": "catalog:dev"
+  }
+}

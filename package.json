@@ -1,0 +1,35 @@
+{
+  "name": "@tofrankie/eslint-plugin",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "author": "Frankie <1426203851@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "run-s lint:* typecheck",
+    "lint:eslint": "eslint . --cache --fix",
+    "lint:prettier": "prettier . --cache --write '!pnpm-lock.yaml'",
+    "typecheck": "pnpm -r --filter=@tofrankie/* --if-present typecheck",
+    "create:plugin": "cd packages && yo eslint:plugin && cd -"
+  },
+  "devDependencies": {
+    "@tofrankie/commitlint": "catalog:dev",
+    "@tofrankie/eslint": "catalog:dev",
+    "@tofrankie/prettier": "catalog:dev",
+    "@tofrankie/tsconfig": "catalog:dev",
+    "commitlint": "catalog:dev",
+    "eslint": "catalog:dev",
+    "eslint-doc-generator": "catalog:dev",
+    "generator-eslint": "catalog:dev",
+    "husky": "catalog:dev",
+    "lint-staged": "catalog:dev",
+    "npm-run-all2": "catalog:dev",
+    "prettier": "catalog:dev",
+    "tsdown": "catalog:dev",
+    "typescript": "catalog:dev",
+    "vitest": "catalog:dev",
+    "yo": "catalog:dev"
+  }
+}

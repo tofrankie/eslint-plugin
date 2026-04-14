@@ -1,0 +1,28 @@
+packages:
+  - packages/*
+
+allowBuilds:
+  yo: true
+
+catalogs:
+  dev:
+    '@tofrankie/commitlint': ^0.0.5
+    '@tofrankie/eslint': ^0.2.1
+    '@tofrankie/prettier': ^0.2.0
+    '@tofrankie/tsconfig': ^0.0.5
+    '@types/node': ^22.15.0
+    commitlint: ^20.5.0
+    eslint: ^10.2.0
+    eslint-doc-generator: ^3.3.2
+    eslint-plugin-eslint-plugin: ^7.3.2
+    generator-eslint: ^6.1.0
+    husky: ^9.1.7
+    lint-staged: ^16.4.0
+    npm-run-all2: ^8.0.4
+    prettier: ^3.8.2
+    tsdown: ^0.21.8
+    typescript: ^5.9.3
+    vitest: ^4.1.4
+    yo: ^7.0.1
+  prod:
+    '@typescript-eslint/utils': ^8.58.2
