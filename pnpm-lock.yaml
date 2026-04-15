@@ -21,6 +21,9 @@ catalogs:
     '@types/node':
       specifier: ^22.15.0
       version: 22.19.17
+    '@typescript-eslint/rule-tester':
+      specifier: ^8.58.2
+      version: 8.58.2
     commitlint:
       specifier: ^20.5.0
       version: 20.5.0
@@ -48,6 +51,9 @@ catalogs:
     prettier:
       specifier: ^3.8.2
       version: 3.8.2
+    publint:
+      specifier: ^0.3.18
+      version: 0.3.18
     tsdown:
       specifier: ^0.21.8
       version: 0.21.8
@@ -80,6 +86,9 @@ importers:
       '@tofrankie/tsconfig':
         specifier: catalog:dev
         version: 0.0.5(typescript@5.9.3)
+      '@typescript-eslint/rule-tester':
+        specifier: catalog:dev
+        version: 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)
       commitlint:
         specifier: catalog:dev
         version: 20.5.0(@types/node@25.6.0)(conventional-commits-parser@6.4.0)(typescript@5.9.3)
@@ -104,9 +113,12 @@ importers:
       prettier:
         specifier: catalog:dev
         version: 3.8.2
+      publint:
+        specifier: catalog:dev
+        version: 0.3.18
       tsdown:
         specifier: catalog:dev
-        version: 0.21.8(synckit@0.11.12)(typescript@5.9.3)
+        version: 0.21.8(publint@0.3.18)(synckit@0.11.12)(typescript@5.9.3)
       typescript:
         specifier: catalog:dev
         version: 5.9.3
@@ -1448,6 +1460,13 @@ packages:
       }
     peerDependencies:
       prettier: ^3.0.0
+
+  '@publint/pack@0.1.4':
+    resolution:
+      {
+        integrity: sha512-HDVTWq3H0uTXiU0eeSQntcVUTPP3GamzeXI41+x7uU9J65JgWQh3qWZHblR1i0npXfFtF+mxBiU2nJH8znxWnQ==,
+      }
+    engines: { node: '>=18' }
 
   '@quansync/fs@1.0.0':
     resolution:
@@ -6268,6 +6287,13 @@ packages:
         integrity: sha512-j5sNQm3VCpQQ7nTqGeOZtoJtV3uKERgCBm9QRhmGRiXiqkf7iRFOkfxdJRZWLkqYY8PNf4cDQF/WfXUYLENrRA==,
       }
 
+  mri@1.2.0:
+    resolution:
+      {
+        integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==,
+      }
+    engines: { node: '>=4' }
+
   ms@2.1.3:
     resolution:
       {
@@ -7062,6 +7088,14 @@ packages:
         integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==,
       }
 
+  publint@0.3.18:
+    resolution:
+      {
+        integrity: sha512-JRJFeBTrfx4qLwEuGFPk+haJOJN97KnPuK01yj+4k/Wj5BgoOK5uNsivporiqBjk2JDaslg7qJOhGRnpltGeog==,
+      }
+    engines: { node: '>=18' }
+    hasBin: true
+
   punycode@2.3.1:
     resolution:
       {
@@ -7380,6 +7414,13 @@ packages:
       {
         integrity: sha512-AUNrbEUHeKY8XsYr/DYpl+qk5+aM+DChopnWOPEzn8YKzOhv4l2zH6LzZms3tOZP3wwdOyc0RmTciyi46HLIuA==,
       }
+
+  sade@1.8.1:
+    resolution:
+      {
+        integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==,
+      }
+    engines: { node: '>=6' }
 
   safe-array-concat@1.1.3:
     resolution:
@@ -9765,6 +9806,8 @@ snapshots:
     dependencies:
       '@xml-tools/parser': 1.0.11
       prettier: 3.8.2
+
+  '@publint/pack@0.1.4': {}
 
   '@quansync/fs@1.0.0':
     dependencies:
@@ -13057,6 +13100,8 @@ snapshots:
 
   module-replacements@2.11.0: {}
 
+  mri@1.2.0: {}
+
   ms@2.1.3: {}
 
   multimatch@8.0.0:
@@ -13564,6 +13609,13 @@ snapshots:
 
   proto-list@1.2.4: {}
 
+  publint@0.3.18:
+    dependencies:
+      '@publint/pack': 0.1.4
+      package-manager-detector: 1.6.0
+      picocolors: 1.1.1
+      sade: 1.8.1
+
   punycode@2.3.1: {}
 
   pupa@3.3.0:
@@ -13760,6 +13812,10 @@ snapshots:
       tslib: 2.8.1
 
   s.color@0.0.15: {}
+
+  sade@1.8.1:
+    dependencies:
+      mri: 1.2.0
 
   safe-array-concat@1.1.3:
     dependencies:
@@ -14224,7 +14280,7 @@ snapshots:
 
   ts-pattern@5.9.0: {}
 
-  tsdown@0.21.8(synckit@0.11.12)(typescript@5.9.3):
+  tsdown@0.21.8(publint@0.3.18)(synckit@0.11.12)(typescript@5.9.3):
     dependencies:
       ansis: 4.2.0
       cac: 7.0.0
@@ -14243,6 +14299,7 @@ snapshots:
       unconfig-core: 7.5.0
       unrun: 0.2.35(synckit@0.11.12)
     optionalDependencies:
+      publint: 0.3.18
       typescript: 5.9.3
     transitivePeerDependencies:
       - '@ts-macro/tsc'

@@ -1,0 +1,3 @@
+# @tofrankie/eslint-plugin
+
+🤯 WIP...

@@ -3,12 +3,13 @@ import eslintPlugin from 'eslint-plugin-eslint-plugin'
 
 export default defineConfig(
   {
+    ignores: ['**/*.md'],
     typescript: true,
   },
-  eslintPlugin.configs.recommended
-  // {
-  //   rules: {
-  //     'eslint-plugin/require-meta-docs-description': 'error',
-  //   },
-  // }
+  eslintPlugin.configs.recommended,
+  {
+    rules: {
+      'eslint-plugin/require-meta-docs-description': 'error',
+    },
+  }
 )
