@@ -8,8 +8,8 @@ ESLint plugin for WXML.
 
 <!-- begin auto-generated rules list -->
 
-| Name                                                                       | Description                                                        |
-| :------------------------------------------------------------------------- | :----------------------------------------------------------------- |
-| [uppercase-first-declarations](docs/rules/uppercase-first-declarations.md) | Function declaration names should start with an upper-case letter. |
+| Name                                                                       | Description                                                            |
+| :------------------------------------------------------------------------- | :--------------------------------------------------------------------- |
+| [uppercase-first-declarations](docs/rules/uppercase-first-declarations.md) | enforce function declaration names to start with an upper-case letter. |
 
 <!-- end auto-generated rules list -->

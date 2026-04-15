@@ -1,6 +1,6 @@
 import { RuleTester } from '@typescript-eslint/rule-tester'
 import { afterAll, describe, it } from 'vitest'
-import { rule } from '../src/rules/uppercase-first-declarations'
+import uppercaseFirstDeclarations from '../src/rules/uppercase-first-declarations'
 
 RuleTester.afterAll = afterAll
 RuleTester.describe = describe
@@ -13,7 +13,7 @@ const ruleTester = new RuleTester({
   },
 })
 
-ruleTester.run('uppercase-first-declarations', rule, {
+ruleTester.run('uppercase-first-declarations', uppercaseFirstDeclarations, {
   valid: [
     {
       code: 'function Foo() {}',

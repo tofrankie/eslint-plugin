@@ -13,7 +13,6 @@ catalogs:
     '@types/node': ^22.15.0
     '@typescript-eslint/rule-tester': ^8.58.2
     commitlint: ^20.5.0
-    eslint: ^10.2.0
     eslint-doc-generator: ^3.3.2
     eslint-plugin-eslint-plugin: ^7.3.2
     generator-eslint: ^6.1.0
@@ -26,5 +25,7 @@ catalogs:
     typescript: ^5.9.3
     vitest: ^4.1.4
     yo: ^7.0.1
+  peer:
+    eslint: ^10.2.0
   prod:
     '@typescript-eslint/utils': ^8.58.2

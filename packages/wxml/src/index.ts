@@ -8,15 +8,17 @@ const plugin = {
       return recommended
     },
   },
-  meta: { name, version },
+  meta: { name, version, namespace: 'wxml' },
   rules,
 }
 
 const recommended = {
   plugins: {
-    'example-typed-linting': plugin,
+    wxml: plugin,
   },
-  rules,
+  rules: {
+    'wxml/uppercase-first-declarations': 'error',
+  },
 }
 
 export default plugin

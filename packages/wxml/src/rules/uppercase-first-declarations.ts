@@ -1,7 +1,6 @@
 import { createRule } from '../utils'
 
-// Type: RuleModule<"uppercase", ...>
-export const rule = createRule({
+export default createRule({
   name: 'uppercase-first-declarations',
   meta: {
     docs: {

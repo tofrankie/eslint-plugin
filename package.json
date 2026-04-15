@@ -18,11 +18,12 @@
   "devDependencies": {
     "@tofrankie/commitlint": "catalog:dev",
     "@tofrankie/eslint": "catalog:dev",
+    "@tofrankie/eslint-plugin-wxml": "workspace:*",
     "@tofrankie/prettier": "catalog:dev",
     "@tofrankie/tsconfig": "catalog:dev",
     "@typescript-eslint/rule-tester": "catalog:dev",
     "commitlint": "catalog:dev",
-    "eslint": "catalog:dev",
+    "eslint": "catalog:peer",
     "eslint-doc-generator": "catalog:dev",
     "generator-eslint": "catalog:dev",
     "husky": "catalog:dev",
