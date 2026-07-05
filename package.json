@@ -1,5 +1,5 @@
 {
-  "name": "@tofrankie/eslint-plugin",
+  "name": "eslint-plugin",
   "type": "module",
   "version": "1.0.0",
   "private": true,
@@ -13,16 +13,18 @@
     "lint:prettier": "prettier . --cache --write",
     "lint:publint": "pnpm -r --filter=@tofrankie/* --if-present publint",
     "typecheck": "pnpm -r --filter=@tofrankie/* --if-present typecheck",
-    "create:plugin": "cd packages && yo eslint:plugin && cd -"
+    "create:plugin": "cd packages && yo eslint:plugin && cd -",
+    "github:release": "tfr"
   },
   "devDependencies": {
     "@fission-ai/openspec": "catalog:dev",
+    "@tofrankie/action": "catalog:dev",
     "@tofrankie/commitlint": "catalog:dev",
     "@tofrankie/eslint": "catalog:dev",
     "@tofrankie/eslint-plugin-wxml": "workspace:*",
     "@tofrankie/prettier": "catalog:dev",
     "@tofrankie/tsconfig": "catalog:dev",
-    "@typescript-eslint/rule-tester": "catalog:dev",
+    "@typescript-eslint/rule-tester": "catalog:test",
     "commitlint": "catalog:dev",
     "eslint": "catalog:peer",
     "eslint-doc-generator": "catalog:dev",
@@ -34,7 +36,7 @@
     "publint": "catalog:dev",
     "tsdown": "catalog:dev",
     "typescript": "catalog:dev",
-    "vitest": "catalog:dev",
+    "vitest": "catalog:test",
     "yo": "catalog:dev"
   }
 }
