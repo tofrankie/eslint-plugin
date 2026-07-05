@@ -2,15 +2,18 @@
 node_modules/
 dist/
 .husky/_/
-.pnpm-store
+.pnpm-store/
 
 # Logs
-logs
 *.log
 
 # OS
 .DS_Store
 desktop.ini
+
+# Editor
+.vscode/
+.idea/
 
 # Cache
 *.tsbuildinfo
@@ -20,9 +23,15 @@ desktop.ini
 # Test
 coverage/
 
+# Agents
+.agents/
+.codex/
+.claude/
+.cursor/
+
 # Local
 .env
 .env.*
 !.env.example
 *.tgz
-.agents
+*.vsix
