@@ -16,6 +16,7 @@
     "create:plugin": "cd packages && yo eslint:plugin && cd -"
   },
   "devDependencies": {
+    "@fission-ai/openspec": "catalog:dev",
     "@tofrankie/commitlint": "catalog:dev",
     "@tofrankie/eslint": "catalog:dev",
     "@tofrankie/eslint-plugin-wxml": "workspace:*",

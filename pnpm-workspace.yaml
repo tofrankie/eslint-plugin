@@ -6,6 +6,7 @@ allowBuilds:
 
 catalogs:
   dev:
+    '@fission-ai/openspec': ^1.5.0
     '@tofrankie/commitlint': ^0.0.5
     '@tofrankie/eslint': ^0.2.1
     '@tofrankie/prettier': ^0.2.0
